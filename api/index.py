@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request
+from flask_cors import CORS  # Import the CORS module
 import requests
 import threading
 import time
@@ -6,6 +7,7 @@ from datetime import datetime
 import pytz  # Import the pytz library
 
 app = Flask(__name__)
+CORS(app) 
 
 # Global array to store total_rank from each API response
 total_ranks_simplified = []
