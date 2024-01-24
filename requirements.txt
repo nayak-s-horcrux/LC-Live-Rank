@@ -1,1 +1,7 @@
 Flask
+aiohttp
+gunicorn
+Flask-Cors
+requests
+pytz
+Flask-Caching
